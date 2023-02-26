@@ -54,4 +54,13 @@ public class BellNumbers {
         return tri[n][0];
     }
     // The algorithm has also a time and space complexity of O(n^2)
+
+    public static void main(String[] args) {
+        int count = -1;
+        for (int n=0; n<=2; n++) {
+            System.out.println("Bell Number " + n + " is " + bellNumbers(n));
+            count++;
+        }
+        System.out.println("Total number of ways to partition " + count);
+    }
 }

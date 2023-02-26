@@ -37,4 +37,10 @@ public class Fibonacci {
         }
         return f[n];
     }
+
+    public static void main(String[] args) {
+        int n = 5;
+        System.out.println(dynamicFib(n));
+        System.out.println(fib(n));
+    }
 }

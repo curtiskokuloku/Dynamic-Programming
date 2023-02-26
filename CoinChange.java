@@ -55,4 +55,15 @@ public class CoinChange {
 
         return table[sum];
     }
+
+    public static void main(String[] args) {
+        int[] coins = {1, 2, 3};
+        int n = coins.length;
+        int sum = 4;
+
+        String s = "Number of ways to make sum by using different combinations from coins: ";
+        System.out.println(s + count(coins, n, sum));
+        System.out.println(s + countWays(coins, n, sum));
+
+    }
 }

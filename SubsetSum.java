@@ -46,4 +46,12 @@ public class SubsetSum {
         }
         return subset[sum][n];
     }
+
+    public static void main(String[] args) {
+        int[] set = { 3, 34, 4, 12, 5, 2 };
+        int sum = 9;
+        int n = set.length;
+        System.out.println("Subset found with given sum?\n" + isSubsetSum(set, n, sum));
+        System.out.println("Subset found with given sum?\n" + isSubsetSum2(set, n, sum));
+    }
 }
